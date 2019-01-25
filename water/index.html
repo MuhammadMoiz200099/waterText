@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Text</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(cover1.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+        }
+
+        .watered {
+            position: absolute;
+            top: 25%;
+            left: 12%;
+            transform: translate(-50%, -50%);
+        }
+
+        .watered h1 {
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            font-size: 10em;
+            position: fixed;
+            color: rgba(255, 255, 255 , .1);
+            background-image: url(Wave-Banner.png);
+            background-repeat: repeat-x;  /*repeat on x-plane*/
+            -webkit-background-clip: text;
+            animation: moveWater 15s linear infinite
+        }
+
+        @keyframes moveWater {
+
+            0% {
+                background-position: left 0px top 0px;
+            }
+
+            40% {
+                background-position: left 1800px top -50px;
+            }
+
+            80% {
+                background-position: left 800px top -50px;
+            }
+
+            0% {
+                background-position: left 240px top 80px;
+            }
+
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <!--    lets Starts-->
+
+
+    <div class="watered">
+        <h1>
+            WavingText
+        </h1>
+    </div>
+
+
+</body>
+
+</html>
